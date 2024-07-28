@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+ .dropdown-submenu {
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+} 
+.nav-item .nav-link{
+    color: white;
+}
+.nav-link.active {
+    /* font-weight: bold;
+    transition: all 0.3s ease;
+    transform: scale(1.2); */
+    color: white !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+    transition: transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:not(.active) {
+    transform: scale(1); /* Ensure non-active links have no transform applied */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover{
+    font-weight: bold;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+    color: white !important;
+}
+.dropdown-item{
+    border-radius: 20px !important;
+}
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: transparent !important;
+    --bs-dropdown-link-active-color:black !important;
 }

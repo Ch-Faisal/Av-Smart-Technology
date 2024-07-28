@@ -1,0 +1,184 @@
+.background-img1 {
+    position: relative;
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* animation: changeBackground 32s infinite; */
+  }
+  h1,h2,h3,h4,h5,h6{
+    color: rgb(2, 5, 25) !important;
+  }
+  p{
+    color: rgb(2, 5, 25) !important;
+  }
+  /* @keyframes changeBackground {
+    0%, 100% {
+      background-image: url('/public/assets/delegate-mics.jpg');
+    }
+    75% {
+      background-image: url('/public/assets/smart-board.jpg');
+    }
+    50% {
+      background-image: url('/public/assets/TraditionalC-08.jpg');
+    }
+    25% {
+      background-image: url('/public/assets/display-Screen.jpg');
+    }
+  } */
+  
+  
+  
+.background-img2{
+    background: url('/public/assets/smart-board.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 560px !important;
+
+}
+.hero-section{
+    position: relative;
+}  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .overflow-custom{
+    overflow: hidden;
+  }
+  .custom-hero-text{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .custom-hero-heading{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 46px;
+    font-weight: bold;
+  }
+  @media (max-width:550px) {
+    .custom-hero-text{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .custom-hero-heading{
+        width: 90%;
+        margin: 0 auto;
+      }
+  }
+  @media (max-width:991px) {
+    .custom-hero-text{
+        font-size: 20px;
+      }
+      .custom-hero-heading{
+        font-size: 35px;
+      }
+  }
+  @media (max-width:767px) {
+    .custom-hero-text{
+        font-size: 18px;
+      }
+      .custom-hero-heading{
+        font-size: 28px;
+      }
+  }
+  .section-2-home-heading{
+    color: rgb(2, 5, 25);
+    padding-bottom: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block; /* Ensures the border or hr only spans the width of the text */
+    border-bottom: 3px solid darkgrey; /* Border style (adjust color and thickness as needed) */
+  }
+  
+  @media (max-width:767px) {
+    .section-2-home-heading{
+        font-size: 24px;
+        font-weight: bold;
+      }
+  }
+  .elementor-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: rgb(2, 5, 25); /* Red background color */
+    border-radius: 50%; /* Rounded border */
+  }
+  
+  .elementor-icon svg {
+    width: 50px; /* Adjust SVG size */
+    height: 50px; /* Adjust SVG size */
+    fill: white; /* SVG fill color */
+  }
+  @media (max-width:767px) {
+    .elementor-icon{
+        margin: 0 auto;
+    }
+  }
+  .img-33{
+    padding-top: 14px;
+  }
+  @media (max-width:1199px) {
+    .img-33{
+      padding-top: 20px;
+    } 
+  }
+  @media (max-width:767px) {
+    .img-33{
+      padding-top: 12px;
+    }
+  }
+  @media (max-width:398px) {
+    .img-33{
+      padding-top: 8px;
+    }
+  }
+  .faq-heading{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(2, 5, 25);
+  }
+  .custom-faq-img-width{
+    width: 50px;
+    height: 50px;
+  }
+  .about-section-pg1-title{
+    font-size: 22px;
+    color: rgba(91, 92, 91, 0.5);
+  }
+  .about-section-pg1-heading{
+    font-size: 36px;
+    color: rgb(2, 5, 25);
+  }
+  .about-section-pg1-button{
+    background-color: rgb(2, 5, 25);
+    color: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    padding: 16px 36px 16px 36px;
+  }
+  @media (max-width: 767px) {
+    .about-section-pg1-heading {
+        font-size: 24px;
+    }
+    .about-section-pg1-title{
+      font-size: 18px;
+    }
+}
+.navbar-toggler {
+  background-color: white !important;
+}
