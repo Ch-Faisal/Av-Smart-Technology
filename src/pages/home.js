@@ -10,8 +10,9 @@ const HomePage = () => {
 
   return (
 <div>
+
   <NavBar/>
-  <div className='hero-section'>
+  {/* <div className='hero-section'>
     <div className='overflow-custom'>
   <div className='background-img1'>
   <div className='overlay'>
@@ -195,7 +196,7 @@ const HomePage = () => {
       <img src='assets/brand4.png' className='img-fluid' alt='Brand 4'/>
     </div>
   </div>
-        </div>
+        </div> */}
 </div>
   );
 };
