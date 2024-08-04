@@ -1,0 +1,93 @@
+.background-img7{
+    background-image: url('/public/assets/about-img.png');
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+}
+.overlay2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .about-heading{
+    font-size: 35px;
+    font-weight: bold;
+    color: #232323;
+  }
+  .about-text{
+    font-size: 15px;
+    color: #5e5c5c;
+  }
+.about-section-bg {
+  position: relative; /* Ensure the overlay is positioned relative to this element */
+  background-image: url('/public/assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-section-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9B1419; /* Adjust color and opacity as needed */
+/* Ensures the overlay is above the background image */
+  opacity: 0.8;
+}
+.about-section-bg p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-section-bg h3{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-section-bg h4{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    .about-section-bg p{
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .about-section-bg h3{
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .about-section-bg h4{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+}
+.about-last-section h4{
+font-size: 18px;
+}
+.about-last-section i{
+    height: 60px !important;
+    }   
+@media (max-width:767px) {
+    .about-last-section i{
+        font-size: 35px !important;
+        height: 45px !important;
+        }   
+}
+    

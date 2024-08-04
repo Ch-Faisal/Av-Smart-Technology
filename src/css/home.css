@@ -29,16 +29,12 @@
             background-position: center;
           }
   .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    text-align: center;
   }
   .hero-section-button {
     font-weight: bold;
@@ -161,10 +157,11 @@
         margin: 0 auto;
     }
   }
-  .our-soluion-heading{
+  .our-soluion-heading {
     font-size: 22px;
     font-weight: bold;
-  }
+    height: 45px;
+}
 .our-solution-text{
   font-size: 16px;
   color: #5e5c5c;
@@ -185,6 +182,11 @@
   transform: scale(1.02);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   color: #fff0f0;
+}
+@media (max-width:991px) {
+  .our-soluion-heading{
+    height: 20px;
+  }
 }
 @media (max-width:767px) {
   .our-soluion-heading{
@@ -270,4 +272,19 @@
   background-color: #0077b5;
   color: white;
   text-decoration: none;
+}
+.whatsapp-logo {
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.whatsapp-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.8;
+}
+.whatsapp-position-custom{
+  position: fixed;
+  bottom: 37px;
+  right: 0;
+  z-index: 1000;
 }

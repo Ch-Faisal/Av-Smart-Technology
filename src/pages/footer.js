@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='row gy-3 d-lg-flex justify-content-lg-center'>
+      <div className='row gy-3 pt-4 d-lg-flex justify-content-lg-center'>
       <div className="col-lg-4 col-md-6 col-12">
           <div className="link-wrapper">
             <h4 className="mb-3">Lahore Regional Office</h4>

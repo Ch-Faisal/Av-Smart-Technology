@@ -1,0 +1,6 @@
+.background-img-contact{
+    background-image: url('/public/assets/contact-us.jpg');
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+}

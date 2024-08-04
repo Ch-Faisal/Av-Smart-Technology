@@ -225,3 +225,17 @@ footer ul li a{
 .footer-last{
   background-color: #1A1D24;
 }
+.navbar-container {
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+@media (min-width:991px) {
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } 
+}

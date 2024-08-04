@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { NavLink} from 'react-router-dom';
 const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('Home');
+    const [activeLink, setActiveLink] = useState('');
     const handleNavClick = (link) => {
         setActiveLink(link);
     };
@@ -20,10 +21,10 @@ const NavBar = () => {
             <div className="offcanvas-body">
                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li className="nav-item">
-                        <a className={`nav-link ${activeLink === 'Home' ? 'active' : ''}`} onClick={() => handleNavClick('Home')} aria-current="page" href="#">HOME</a>
+                        <NavLink className={`nav-link ${activeLink === 'Home' ? 'active' : ''}`} onClick={() => handleNavClick('Home')} aria-current="page" to={'/'}>HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} onClick={() => handleNavClick('about')} href="#">ABOUT</a>
+                        <NavLink className={`nav-link ${activeLink === 'about' ? 'active' : ''}`} onClick={() => handleNavClick('about')} to={'/about'}>ABOUT</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                         <a className={`nav-link dropdown-toggle ${activeLink === 'products' ? 'active' : ''}`} onClick={() => handleNavClick('products')} href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,7 +60,7 @@ const NavBar = () => {
                         <a className={`nav-link ${activeLink === 'services' ? 'active' : ''}`} onClick={() => handleNavClick('services')} href="#">SERVICES</a>
                     </li>
                     <li className="nav-item">
-                        <a className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`} onClick={() => handleNavClick('contact')} href="#">CONTACT</a>
+                        <NavLink className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`} onClick={() => handleNavClick('contact')} to={'/contact'}>CONTACT</NavLink>
                     </li>
                     <li className="nav-item">
                         <a className={`nav-link ${activeLink === 'blog' ? 'active' : ''}`} onClick={() => handleNavClick('blog')} href="#">BLOG</a>
