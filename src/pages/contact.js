@@ -2,33 +2,203 @@ import React, { useEffect, useState } from 'react';
 import '../css/contact.css'
 import NavBar from './navbar';
 import Footer from './footer';
-import { NavLink ,useNavigate, } from 'react-router-dom';
+import { Autoplay} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+const position = [31.5204, 74.3587];
+
+const customIcon = new L.Icon({
+  iconUrl: 'assets/icons8-location.gif',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 const Contact = () => {
     const [isSticky, setIsSticky] = useState(false);
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: '',
+      phone:'',
+      organization:''
+    });
 
     useEffect(() => {
       const handleScroll = () => {
-        // Update sticky state based on scroll position
         setIsSticky(window.scrollY > 500);
       };
-  
       window.addEventListener('scroll', handleScroll);
-      
-      // Initial check in case the user is already scrolled
       handleScroll();
   
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log('Form submitted:', formData);
+    };
   return (
 <div>
 <div className={`navbar-container ${isSticky ? 'sticky' : ''}`}>
   <NavBar/>
   </div>
   <div className='background-img-contact overlay2'>
-          <h2 className='mt-3 custom-hero-heading'>Contact Us</h2>
-          <p>Thank you for your interest in KBSarkar, if you have any questions about our services you can call or email us, and we will be happy to assist you</p>
+    <div className='container'>
+      <div className='row d-flex justify-content-center'>
+        <div className='col-lg-8 col-md-10 col-12'>
+        <h2 className='mt-3 custom-hero-heading'>Contact Us</h2>
+        <p>Thank you for your interest in KBSarkar, if you have any questions about our services you can call or email us, and we will be happy to assist you</p>
         </div>
+      </div>
+    </div>
+        </div>
+        <div className='container mt-5'>
+          <div className='row d-flex align-items-center justify-content-center'>
+            <div className='col-12 text-center'>
+            <h2 className='contact-heading'><span className='contact-custom-color'>Get in</span> Touch or <span className='contact-custom-color'>Book a</span> Demo</h2>
+            </div>
+            <div className='col-lg-4 col-md-8 col-10 mt-lg-0 mt-3 order-lg-1 order-2'>
+              <div className='our-solution-card1 mt-4'>
+                <img src='assets/lahore2.jpg' className='img-fluid' alt='lahore'/>
+                <div className='custom-padding-contact'>
+                <h4 className='contact-card-heading mt-1 mb-4'>Lahore Regional Office</h4>
+                <h6 className='contact-card-h6'>Address :</h6>
+                <p className='contact-card-p'>Office # 19 Ground Floor Al Latif Centre, Main Boulevard Gulberg III Lahore, Pakistan</p>
+                <h6 className='contact-card-h6'>Phone :</h6>
+                <p className='contact-card-p'>+92 321 0333 525</p>
+                <h6 className='contact-card-h6'>Email :</h6>
+                <p className='contact-card-p'>info@avsmarttechnologies.com</p>
+              </div>
+            </div>
+            </div>
+            <div className='col-lg-8 col-12 order-lg-2 order-1 ps-5'>
+              <div className="contact-form mt-4">
+              <form onSubmit={handleSubmit}>
+  <div className="form-group">
+    <label htmlFor="name">Your Name*</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      value={formData.name}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="email">Your Email*</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="phone">Phone Number*</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      value={formData.phone}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="organization">Organization / Institution Name*</label>
+    <input
+      type="text"
+      id="organization"
+      name="organization"
+      value={formData.organization}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  <div className="form-group">
+    <label htmlFor="message">Your Message*</label>
+    <textarea
+      id="message"
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      required
+    ></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
 
+    </div>
+            </div>
+          </div>
+        </div>
+        <div className='container mt-5 mb-5'>
+          <div className='row'>
+                    <div className='col-12'>
+              <h2 className='contact-heading text-center'><span className='contact-custom-color'>We are</span> optimists <span className='contact-custom-color'>who love</span> to work together</h2>
+              <div className='mt-5'>
+              <Swiper
+                modules={[Autoplay]}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                }} 
+                spaceBetween={20}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 2,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                  },
+                  991: {
+                    slidesPerView: 4,
+                  },
+                }}
+                >
+                  <SwiperSlide>
+                    <img src='assets/avatar_1.jpg' className='img-fluid' alt='avatar1'/>
+      </SwiperSlide>
+      <SwiperSlide>
+                    <img src='assets/avatar_2.jpg' className='img-fluid' alt='avatar2'/>
+      </SwiperSlide>
+      <SwiperSlide>
+                    <img src='assets/avatar_3.jpg' className='img-fluid' alt='avatar3'/>
+      </SwiperSlide>
+      <SwiperSlide>
+                    <img src='assets/avatar_4.jpg' className='img-fluid' alt='avatar4'/>
+      </SwiperSlide>
+          </Swiper>
+          </div>
+            </div>
+          </div>
+        </div>
+        <MapContainer center={position} zoom={13} style={{ height: '400px', width: '100%' }}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={position} icon={customIcon}>
+        <Popup>
+          Office # 19, Ground Floor, Al Latif Centre, Main Boulevard Gulberg III, Lahore, Pakistan
+        </Popup>
+      </Marker>
+    </MapContainer>
           <div className='whatsapp-position-custom'>
           <svg
       xmlns="http://www.w3.org/2000/svg"

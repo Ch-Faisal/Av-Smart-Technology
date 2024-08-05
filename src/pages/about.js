@@ -2,19 +2,15 @@ import React, { useEffect, useState } from 'react';
 import '../css/about.css'
 import NavBar from './navbar';
 import Footer from './footer';
-import { NavLink ,useNavigate, } from 'react-router-dom';
 const About = () => {
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
       const handleScroll = () => {
-        // Update sticky state based on scroll position
         setIsSticky(window.scrollY > 500);
       };
   
       window.addEventListener('scroll', handleScroll);
-      
-      // Initial check in case the user is already scrolled
       handleScroll();
   
       return () => window.removeEventListener('scroll', handleScroll);
@@ -30,7 +26,7 @@ const About = () => {
         <div className='container mt-5'>
             <div className='row d-flex align-items-center justify-content-between'>
                 <div className='col-lg-6 col-12 order-lg-1 order-2'>
-                    <img src='assets/about-main1.png' className='img-fluid'/>
+                    <img src='assets/about-main1.png' className='img-fluid' alt='image1'/>
                 </div>
                 <div className='col-lg-6 col-12 order-lg-2 order-1'>
                     <h3 className='about-heading'>The Av Smart Technologies & Co. Story</h3>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '../css/home.css'
 import NavBar from './navbar';
 import Footer from './footer';
-import { NavLink ,useNavigate, } from 'react-router-dom';
 import { Navigation,Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -41,7 +40,7 @@ const HomePage = () => {
     >
       <SwiperSlide>
       <div className='background-img1 overlay'>
-          <img src='assets/benq.png' className='img-fluid' width="100"/>
+          <img src='assets/benq.png' className='img-fluid' width="100" alt='benq'/>
           <h2 className='mt-3 custom-hero-heading'>No1 4K Projector in the World</h2>
           <p className='px-2 custom-hero-text mt-3'>Bringing total visual enjoyment for all your home entertainment, BenQ color expertise perfectly balances high visual brightness</p>
           <button className='hero-section-button mt-3'>Learn More</button>
@@ -49,7 +48,7 @@ const HomePage = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='background-img2 overlay'>
-        <img src='assets/benq.png' className='img-fluid' width="100"/>
+        <img src='assets/benq.png' className='img-fluid' width="100" alt='benq'/>
           <h2 className='mt-3 custom-hero-heading'>Harness the Power of Productivity with Digital Collaboration</h2>
           <p className='px-2 custom-hero-text mt-3'>BenQ’s range of 4K UHD Interactive Flat Panels (IFP) are optimized for education and have the friendliest user interface along with classroom-</p>
           <button className='hero-section-button mt-3'>Learn More</button>
@@ -57,7 +56,7 @@ const HomePage = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='background-img3 overlay'>
-        <img src='assets/benq.png' className='img-fluid' width="100"/>
+        <img src='assets/benq.png' className='img-fluid' width="100" alt='benq'/>
           <h2 className='mt-3 custom-hero-heading'>Meet the Next Generation Touch Screens</h2>
           <p className='px-2 custom-hero-text mt-3'>BenQ Corporate Interactive Flat Panels (IFPs) are designed to tap into the dynamic possibilities of the modern meeting room</p>
           <button className='hero-section-button mt-3'>Learn More</button>
@@ -65,7 +64,7 @@ const HomePage = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='background-img5 overlay'>
-        <img src='assets/benq.png' className='img-fluid' width="100"/>
+        <img src='assets/benq.png' className='img-fluid' width="100" alt='benq'/>
           <h2 className='mt-3 custom-hero-heading'>Great things happen when people click</h2>
           <p className='px-2 custom-hero-text mt-3'>InstaShow, the wireless presentation and conferencing hub, makes hybrid collaboration flow, in one click</p>
           <button className='hero-section-button mt-3'>Learn More</button>
@@ -73,7 +72,7 @@ const HomePage = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='background-img4 overlay'>
-        <img src='assets/benq.png' className='img-fluid' width="100"/>
+        <img src='assets/benq.png' className='img-fluid' width="100" alt='benq'/>
           <h2 className='mt-3 custom-hero-heading1'>Collaborate your way</h2>
           <p className='px-2 custom-hero-text1 mt-3'>Enterprise Video Conference Solution</p>
           <button className='hero-section-button mt-3'>Learn More</button>
@@ -209,37 +208,37 @@ const HomePage = () => {
       <div className='row mt-3'>
       <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
             <div className='col-lg-3 col-md-6 col-12 text-md-start text-center'>
               <div className='our-solution-card1 text-center'>
-                <img src='assets/gallery-1.jpg' className='img-fluid'/>
+                <img src='assets/gallery-1.jpg' className='img-fluid' alt='gallery'/>
                 <p className='mt-3 pb-3 our-solution-text'>BenQ Interactive Flat Panels for Corporate</p>
               </div>
             </div>
@@ -274,25 +273,25 @@ const HomePage = () => {
                 }}
                 >
                   <SwiperSlide>
-                    <img src='assets/logo1.png' className='img-fluid'/>
+                    <img src='assets/logo1.png' className='img-fluid' alt='logo1'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo2.png' className='img-fluid'/>
+                    <img src='assets/logo2.png' className='img-fluid' alt='logo2'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo3.png' className='img-fluid'/>
+                    <img src='assets/logo3.png' className='img-fluid' alt='logo3'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo4.png' className='img-fluid'/>
+                    <img src='assets/logo4.png' className='img-fluid' alt='logo4'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo5.png' className='img-fluid' />
+                    <img src='assets/logo5.png' className='img-fluid' alt='logo5'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo6.png' className='img-fluid'/>
+                    <img src='assets/logo6.png' className='img-fluid' alt='logo6'/>
       </SwiperSlide>
       <SwiperSlide>
-                    <img src='assets/logo7.png' className='img-fluid'/>
+                    <img src='assets/logo7.png' className='img-fluid' alt='logo7'/>
       </SwiperSlide>
           </Swiper>
         </div>
@@ -301,15 +300,15 @@ const HomePage = () => {
         <div className="container mt-5">
           <div className='row'>
             <div className='col-12 d-flex justify-content-center gap-2'>
-            <a className="social-icon-facebook icons" href="#" target="_blank">
+            <a className="social-icon-facebook icons" href="/" target="_blank">
 						<i className="fab fa-facebook"></i></a>
-					<a className="icons social-icon-instagram" href="#" target="_blank">
+					<a className="icons social-icon-instagram" href="/" target="_blank">
 						<i className="fab fa-instagram"></i></a>
-					<a className="icons social-icon-twitter" href="#" target="_blank">
+					<a className="icons social-icon-twitter" href="/" target="_blank">
 						<i className="fab fa-twitter"></i>					</a>
-					<a className="icons social-icon-youtube" href="#" target="_blank">
+					<a className="icons social-icon-youtube" href="/" target="_blank">
 						<i className="fab fa-youtube"></i>					</a>
-					<a className="icons social-icon-linkedin" href="#" target="_blank">
+					<a className="icons social-icon-linkedin" href="/" target="_blank">
 						<i className="fab fa-linkedin"></i>					</a>
             </div>
           </div>

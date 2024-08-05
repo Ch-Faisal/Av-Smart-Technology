@@ -106,12 +106,12 @@ const Footer = () => {
             <ul className="m-0 list-unstyled">
               <li className="mb-3">
                 <a href="#!" className='footer-text-inner'>
-                <i aria-hidden="true" class="fas fa-phone-alt"></i> &nbsp;92-21-34391684
+                <i aria-hidden="true" class="fas fa-phone-alt"></i> &nbsp;+92 321 0333 525
                 </a>
               </li>
               <li className="mb-3">
                 <a href="#!" className='footer-text-inner'>
-                <i aria-hidden="true" class="fas fa-mail-bulk"></i> &nbsp;Info@avsmarttechnologies.com
+                <i aria-hidden="true" class="fas fa-mail-bulk"></i> &nbsp;info@avsmarttechnologies.com
                 </a>
               </li>
             </ul>
@@ -125,12 +125,12 @@ const Footer = () => {
             <ul className="m-0 list-unstyled">
               <li className="mb-3">
                 <a className='d-flex align-items-center gap-2' href="#!">
-                <i aria-hidden="true" class="fas fa-map-marker-alt"></i> &nbsp;Office # 1210, HighQ Tower, Jail Road, Gulberg V, Lahore
+                <i aria-hidden="true" class="fas fa-map-marker-alt"></i> &nbsp;Office # 19 Ground Floor Al Latif Centre, Main Boulevard Gulberg III Lahore, Pakistan
                 </a>
               </li>
               <li className="mb-3">
                 <a href="#!">
-                <i aria-hidden="true" class="fas fa-phone-alt"></i> &nbsp;Info@avsmarttechnologies.com
+                <i aria-hidden="true" class="fas fa-phone-alt"></i> &nbsp;info@avsmarttechnologies.com
                 </a>
               </li>
             </ul>
