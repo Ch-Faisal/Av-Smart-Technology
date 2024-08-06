@@ -1,0 +1,137 @@
+.background-img-benq{
+    background-image: url('/public/assets/banner2.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+}
+.custom-hero-products-heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    z-index: 10000;
+}
+@media (max-width:991px) {
+      .custom-hero-products-heading{
+        font-size: 35px;
+      }
+  }
+  @media (max-width:767px) {
+      .custom-hero-products-heading{
+        font-size: 28px;
+      }
+  }
+  .benq-button-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b82025;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.8s ease, border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .benq-button-1:hover {
+    background-color: #23262F;  }
+    .benq-text-main-h{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .benq-card1{
+        box-shadow: 0px 0px 10px 0px rgba(202.5, 202.5, 202.5, 0.5);
+        cursor: pointer;
+      }
+      .benq-card1:hover {
+        box-shadow: 0px 4px 20px 0px rgba(202.5, 202.5, 202.5, 0.5);
+        transform: scale(1.05);
+      }
+      .benq-card1 img{
+        height: 230px !important;
+      }
+      .benq-card1 h3{
+        height: 70px !important;
+      }
+      .benq-heading-1{
+        font-size: 35px;
+        font-weight: bold;
+      }
+      @media (max-width: 767px) {
+        .benq-heading-1 {
+            font-size: 24px;
+        }
+    }
+    .benq-text-1{
+        font-size: 16px;
+        color: #5e5c5c;
+    }
+    .navbar-custom-border{
+        border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    .benq-card2{
+        box-shadow: 0px 0px 10px 0px rgba(202.5, 202.5, 202.5, 0.5);
+        cursor: pointer;
+    }
+    .benq-card-heading{
+        font-size: 18px;
+        border-top: 1px solid rgb(223, 222, 222);
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    .benq-card2 ul li{
+        font-size: 14px;
+    }
+    .benq-card2 ul li span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .benq-button-2 {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #b82025;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background-color 0.8s ease, border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+      }
+      
+      .benq-button-2:hover {
+        background-color: #23262F;  }
+        @media (max-width:767px) {
+            .benq-card-heading{
+                font-size: 14px;
+            }
+            .benq-card2 ul li{
+                font-size: 12px;
+            }
+        }
+        @media (min-width:1399px) {
+            .benq-card2 ul{
+                height: 65px;
+            }
+        }
+        .ul-custom-border{
+            border-top: 1px solid rgb(223, 222, 222);
+            padding-top: 15px;
+            height: 80px !important;
+        }
+        .benq-card3 img{
+            height: 240px !important;
+        }
+        .benq-card4 img{
+            height: 240px !important;
+        }
+        .benq-card4 ul{
+            height: 80px !important;
+        }
+        @media (max-width:1199px) {
+            .benq-card4 ul{
+                height: auto !important;
+            }
+        }

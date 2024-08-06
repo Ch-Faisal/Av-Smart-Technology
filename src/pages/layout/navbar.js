@@ -34,15 +34,15 @@ const NavBar = () => {
                         <li className="md-dropdown lg-dropend dropdown-submenu">
                             <a className="dropdown-item dropdown-toggle" href="#" id="multimediaDropdown" data-bs-toggle="dropdown" aria-expanded="false"><span>Multimedia Projectors</span></a>
                             <ul className="dropdown-menu p-lg-0 text-start submenu-child" aria-labelledby="multimediaDropdown">
-                                <li><a className="dropdown-item" href="#"><span>BenQ</span></a></li>
-                                <li><a className="dropdown-item" href="#"><span>ViewSonic</span></a></li>
-                                <li><a className="dropdown-item" href="#"><span>Acer</span></a></li>
+                                <li><NavLink className="dropdown-item" to={'/benq'}><span>BenQ</span></NavLink></li>
+                                <li><NavLink className="dropdown-item" to={'/viewSonic'}><span>ViewSonic</span></NavLink></li>
+                                <li><NavLink className="dropdown-item" to={'/acer'}><span>Acer</span></NavLink></li>
                             </ul>
                         </li>
                             <li className="md-dropdown lg-dropend dropdown-submenu"><a className="dropdown-item dropdown-toggle" id="multimediaConference" href="#" data-bs-toggle="dropdown" aria-expanded="false"><span>Conferencing Systems</span></a>
                              <ul className="dropdown-menu p-lg-0 text-start submenu-child" aria-labelledby="multimediaConference">
-                                <li><a className="dropdown-item" href="#"><span>Video Conference System</span></a></li>
-                                <li><a className="dropdown-item" href="#"><span>Audio Conference System</span></a></li>
+                                <li><NavLink className="dropdown-item" to={'/video-conference-system'}><span>Video Conference System</span></NavLink></li>
+                                <li><NavLink className="dropdown-item" to={'/audio-conference-system'}><span>Audio Conference System</span></NavLink></li>
                             </ul>
                             </li>
                             <li  className="md-dropdown lg-dropend dropdown-submenu"><a className="dropdown-item  dropdown-toggle" href="#" id="multimediaInteractive"  data-bs-toggle="dropdown" aria-expanded="false"><span>Smart Interactive Solutions</span></a>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../css/about.css'
-import NavBar from './navbar';
-import Footer from './footer';
+import NavBar from './layout/navbar';
+import Footer from './layout/footer';
 const About = () => {
     const [isSticky, setIsSticky] = useState(false);
 
